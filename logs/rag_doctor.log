@@ -1,0 +1,474 @@
+2026-06-04 23:46:24.251 | INFO     | services.document_service:load_documents:80 - Loaded 2 pages/sections from '03727abd_University_RAG_Knowledge_Base.pdf'
+2026-06-04 23:46:24.253 | INFO     | services.rag_service:ingest_document:78 - Split into 3 chunks (size=512, overlap=50)
+2026-06-04 23:46:24.253 | INFO     | services.vector_store_service:get_embeddings:31 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-04 23:47:29.752 | INFO     | services.vector_store_service:get_embeddings:37 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-04 23:47:33.478 | INFO     | services.vector_store_service:build_vector_store:71 - Indexed 3 chunks into collection 'pipeline_8cee6c354f4d' using model 'all-MiniLM-L6-v2'
+2026-06-04 23:47:33.478 | INFO     | services.rag_service:ingest_document:105 - Pipeline ready: pipeline_id=8cee6c354f4d, doc_id=d2ad0f252353
+2026-06-04 23:47:42.654 | INFO     | services.document_service:load_documents:80 - Loaded 2 pages/sections from '894b19b8_University_RAG_Knowledge_Base.pdf'
+2026-06-04 23:47:42.654 | INFO     | services.rag_service:ingest_document:78 - Split into 3 chunks (size=512, overlap=50)
+2026-06-04 23:47:42.808 | INFO     | services.vector_store_service:build_vector_store:71 - Indexed 3 chunks into collection 'pipeline_76cdc6cfeeb1' using model 'all-MiniLM-L6-v2'
+2026-06-04 23:47:42.809 | INFO     | services.rag_service:ingest_document:105 - Pipeline ready: pipeline_id=76cdc6cfeeb1, doc_id=dadfa4cfb3ef
+2026-06-04 23:47:54.298 | INFO     | services.document_service:load_documents:80 - Loaded 2 pages/sections from '894b19b8_University_RAG_Knowledge_Base.pdf'
+2026-06-04 23:47:54.298 | INFO     | agents.evaluation_agent:generate_eval_dataset:68 - Generating 10 eval questions for pipeline '76cdc6cfeeb1'
+2026-06-04 23:47:55.355 | ERROR    | utils.llm_client:chat_sync:86 - Nexus API call failed: Error code: 401 - {'error': {'message': "key not allowed to access model. This key can only access models=['gpt-4.1-nano', 'whisper-1', 'gemini-2.5-flash', 'gemini-2.5-flash-tts', 'nova-micro', 'text-embedding-3-small']. Tried to access openai/gpt-4.1", 'type': 'key_model_access_denied', 'param': 'model', 'code': '401'}}
+2026-06-04 23:47:57.949 | ERROR    | utils.llm_client:chat_sync:86 - Nexus API call failed: Error code: 401 - {'error': {'message': "key not allowed to access model. This key can only access models=['gpt-4.1-nano', 'whisper-1', 'gemini-2.5-flash', 'gemini-2.5-flash-tts', 'nova-micro', 'text-embedding-3-small']. Tried to access openai/gpt-4.1", 'type': 'key_model_access_denied', 'param': 'model', 'code': '401'}}
+2026-06-04 23:48:00.441 | ERROR    | utils.llm_client:chat_sync:86 - Nexus API call failed: Error code: 401 - {'error': {'message': "key not allowed to access model. This key can only access models=['gpt-4.1-nano', 'whisper-1', 'gemini-2.5-flash', 'gemini-2.5-flash-tts', 'nova-micro', 'text-embedding-3-small']. Tried to access openai/gpt-4.1", 'type': 'key_model_access_denied', 'param': 'model', 'code': '401'}}
+2026-06-04 23:48:00.441 | ERROR    | ui.tabs.evaluation_tab:run_evaluation:97 - Evaluation tab error: Nexus API error: Error code: 401 - {'error': {'message': "key not allowed to access model. This key can only access models=['gpt-4.1-nano', 'whisper-1', 'gemini-2.5-flash', 'gemini-2.5-flash-tts', 'nova-micro', 'text-embedding-3-small']. Tried to access openai/gpt-4.1", 'type': 'key_model_access_denied', 'param': 'model', 'code': '401'}}
+2026-06-04 23:49:21.473 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (5 chars)
+2026-06-04 23:50:02.650 | INFO     | services.document_service:load_documents:80 - Loaded 2 pages/sections from '04f6e935_University_RAG_Knowledge_Base.pdf'
+2026-06-04 23:50:02.651 | INFO     | services.rag_service:ingest_document:78 - Split into 3 chunks (size=512, overlap=50)
+2026-06-04 23:50:02.651 | INFO     | services.vector_store_service:get_embeddings:31 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-04 23:50:09.447 | INFO     | services.vector_store_service:get_embeddings:37 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-04 23:50:10.857 | INFO     | services.vector_store_service:build_vector_store:71 - Indexed 3 chunks into collection 'pipeline_8897fb1274f3' using model 'all-MiniLM-L6-v2'
+2026-06-04 23:50:10.859 | INFO     | services.rag_service:ingest_document:105 - Pipeline ready: pipeline_id=8897fb1274f3, doc_id=e6aeefe22b4d
+2026-06-04 23:50:31.696 | INFO     | services.document_service:load_documents:80 - Loaded 2 pages/sections from '04f6e935_University_RAG_Knowledge_Base.pdf'
+2026-06-04 23:50:31.697 | INFO     | agents.evaluation_agent:generate_eval_dataset:68 - Generating 5 eval questions for pipeline '8897fb1274f3'
+2026-06-04 23:50:34.181 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (925 chars)
+2026-06-04 23:50:34.181 | INFO     | agents.evaluation_agent:generate_eval_dataset:95 - Generated 5 evaluation questions.
+2026-06-04 23:50:34.181 | INFO     | agents.evaluation_agent:collect_rag_outputs:116 - Querying pipeline [1/5]: What is the deadline for the B.Tech admission application pr...
+2026-06-04 23:50:34.186 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '8897fb1274f3'
+2026-06-04 23:50:36.063 | INFO     | agents.evaluation_agent:collect_rag_outputs:116 - Querying pipeline [2/5]: How much is the annual tuition fee for the B.Tech program?...
+2026-06-04 23:50:36.070 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '8897fb1274f3'
+2026-06-04 23:50:37.573 | INFO     | agents.evaluation_agent:collect_rag_outputs:116 - Querying pipeline [3/5]: What is the minimum attendance percentage required for stude...
+2026-06-04 23:50:37.576 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '8897fb1274f3'
+2026-06-04 23:51:04.802 | INFO     | agents.evaluation_agent:collect_rag_outputs:116 - Querying pipeline [4/5]: Within what hours are visitors allowed in the hostel?...
+2026-06-04 23:51:04.808 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '8897fb1274f3'
+2026-06-04 23:51:06.191 | INFO     | agents.evaluation_agent:collect_rag_outputs:116 - Querying pipeline [5/5]: What benefits does the placement cell offer to students?...
+2026-06-04 23:51:06.196 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '8897fb1274f3'
+2026-06-04 23:51:07.591 | INFO     | services.evaluation_service:run_ragas_evaluation:66 - Running RAGAS evaluation on 5 questions...
+2026-06-05 00:03:03.875 | ERROR    | ui.tabs.evaluation_tab:run_evaluation:97 - Evaluation tab error: RAGAS evaluation failed: The runner thread which was running the jobs raised an exeception. Read the traceback above to debug it. You can also pass `raise_exceptions=False` incase you want to show only a warning message instead.
+2026-06-05 00:14:28.716 | INFO     | services.document_service:load_documents:80 - Loaded 2 pages/sections from 'd6177d1e_University_RAG_Knowledge_Base.pdf'
+2026-06-05 00:14:28.717 | INFO     | services.document_service:load_documents:80 - Loaded 2 pages/sections from '7100695d_University_RAG_Knowledge_Base.pdf'
+2026-06-05 00:14:28.718 | INFO     | services.rag_service:ingest_document:78 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 00:14:28.718 | INFO     | services.rag_service:ingest_document:78 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 00:14:28.719 | INFO     | services.vector_store_service:get_embeddings:31 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 00:14:28.719 | INFO     | services.vector_store_service:get_embeddings:31 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 00:14:36.420 | INFO     | services.vector_store_service:get_embeddings:37 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 00:14:36.457 | INFO     | services.vector_store_service:get_embeddings:37 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 00:14:38.987 | INFO     | services.vector_store_service:build_vector_store:71 - Indexed 3 chunks into collection 'pipeline_73f9860325b4' using model 'all-MiniLM-L6-v2'
+2026-06-05 00:14:38.988 | INFO     | services.rag_service:ingest_document:105 - Pipeline ready: pipeline_id=73f9860325b4, doc_id=ff8c87e5fb2e
+2026-06-05 00:14:39.014 | INFO     | services.vector_store_service:build_vector_store:71 - Indexed 3 chunks into collection 'pipeline_0ad10c73cb9b' using model 'all-MiniLM-L6-v2'
+2026-06-05 00:14:39.015 | INFO     | services.rag_service:ingest_document:105 - Pipeline ready: pipeline_id=0ad10c73cb9b, doc_id=bee91dc8a68c
+2026-06-05 00:15:20.201 | INFO     | services.document_service:load_documents:80 - Loaded 2 pages/sections from 'd6177d1e_University_RAG_Knowledge_Base.pdf'
+2026-06-05 00:15:20.202 | INFO     | agents.evaluation_agent:generate_eval_dataset:58 - Generating 4 eval questions for pipeline '73f9860325b4'
+2026-06-05 00:15:23.100 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (664 chars)
+2026-06-05 00:15:23.100 | INFO     | agents.evaluation_agent:generate_eval_dataset:82 - Generated 4 evaluation questions.
+2026-06-05 00:15:23.102 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 4 answers in parallel (workers=4)...
+2026-06-05 00:15:23.117 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '73f9860325b4'
+2026-06-05 00:15:23.122 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '73f9860325b4'
+2026-06-05 00:15:23.122 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '73f9860325b4'
+2026-06-05 00:15:23.129 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '73f9860325b4'
+2026-06-05 00:15:25.070 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 4 questions (all 5 metrics in parallel)...
+2026-06-05 00:19:05.516 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 97.4/100 Grade A | F:1.00 AR:0.99 CR:1.00 CP:0.87 AC:0.72
+2026-06-05 00:21:16.228 | INFO     | agents.retrieval_inspector:run_retrieval_inspector:109 - Running Retrieval Inspector for pipeline '73f9860325b4'
+2026-06-05 00:21:18.859 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (984 chars)
+2026-06-05 00:21:18.859 | INFO     | agents.retrieval_inspector:run_retrieval_inspector:162 - Retrieval Inspector analysis complete.
+2026-06-05 00:21:18.859 | INFO     | agents.hallucination_detector:run_hallucination_detector:196 - Running Hallucination Detector on 4 answers...
+2026-06-05 00:21:18.859 | DEBUG    | agents.hallucination_detector:run_hallucination_detector:203 - Checking answer 1/4
+2026-06-05 00:21:18.919 | INFO     | agents.hallucination_detector:_get_nli_pipeline:34 - Loading NLI model: cross-encoder/nli-deberta-v3-small
+2026-06-05 00:23:19.475 | INFO     | agents.hallucination_detector:_get_nli_pipeline:40 - NLI model loaded.
+2026-06-05 00:23:21.127 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (185 chars)
+2026-06-05 00:23:21.127 | DEBUG    | agents.hallucination_detector:run_hallucination_detector:203 - Checking answer 2/4
+2026-06-05 00:23:22.254 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (268 chars)
+2026-06-05 00:23:22.254 | DEBUG    | agents.hallucination_detector:run_hallucination_detector:203 - Checking answer 3/4
+2026-06-05 00:23:23.328 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (187 chars)
+2026-06-05 00:23:23.328 | DEBUG    | agents.hallucination_detector:run_hallucination_detector:203 - Checking answer 4/4
+2026-06-05 00:24:03.906 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (211 chars)
+2026-06-05 00:24:03.907 | INFO     | agents.hallucination_detector:run_hallucination_detector:225 - Hallucination detection complete. Overall risk: Low, rate: 0.000
+2026-06-05 00:24:08.358 | INFO     | services.document_service:load_documents:80 - Loaded 2 pages/sections from 'd6177d1e_University_RAG_Knowledge_Base.pdf'
+2026-06-05 00:24:08.360 | INFO     | agents.evaluation_agent:generate_eval_dataset:58 - Generating 3 eval questions for pipeline '73f9860325b4'
+2026-06-05 00:24:11.455 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (611 chars)
+2026-06-05 00:24:11.455 | INFO     | agents.evaluation_agent:generate_eval_dataset:82 - Generated 3 evaluation questions.
+2026-06-05 00:24:11.606 | INFO     | services.vector_store_service:build_vector_store:71 - Indexed 5 chunks into collection 'pipeline_6b5f57e44f38' using model 'all-MiniLM-L6-v2'
+2026-06-05 00:24:11.606 | INFO     | services.rag_service:build_pipeline_for_config:212 - Built optimization pipeline 6b5f57e44f38 (chunk=256, k=3, model=all-MiniLM-L6-v2)
+2026-06-05 00:24:11.606 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 00:24:11.624 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '6b5f57e44f38'
+2026-06-05 00:24:11.627 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '6b5f57e44f38'
+2026-06-05 00:24:11.627 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '6b5f57e44f38'
+2026-06-05 00:24:13.134 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 00:27:06.159 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 92.7/100 Grade A | F:0.83 AR:0.91 CR:1.00 CP:1.00 AC:0.83
+2026-06-05 00:27:06.166 | INFO     | services.vector_store_service:get_embeddings:31 - Loading embedding model: all-mpnet-base-v2
+2026-06-05 00:28:40.832 | INFO     | services.vector_store_service:get_embeddings:37 - Embedding model loaded: all-mpnet-base-v2
+2026-06-05 00:28:41.145 | INFO     | services.vector_store_service:build_vector_store:71 - Indexed 5 chunks into collection 'pipeline_c35bad7ca430' using model 'all-mpnet-base-v2'
+2026-06-05 00:28:41.145 | INFO     | services.rag_service:build_pipeline_for_config:212 - Built optimization pipeline c35bad7ca430 (chunk=256, k=3, model=all-mpnet-base-v2)
+2026-06-05 00:28:41.145 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 00:28:41.158 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline 'c35bad7ca430'
+2026-06-05 00:28:41.162 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline 'c35bad7ca430'
+2026-06-05 00:28:41.164 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline 'c35bad7ca430'
+2026-06-05 00:28:42.951 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 00:30:06.239 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 94.2/100 Grade A | F:1.00 AR:0.90 CR:1.00 CP:0.83 AC:0.83
+2026-06-05 00:30:06.357 | INFO     | services.vector_store_service:build_vector_store:71 - Indexed 5 chunks into collection 'pipeline_596ef0dc3213' using model 'all-MiniLM-L6-v2'
+2026-06-05 00:30:06.357 | INFO     | services.rag_service:build_pipeline_for_config:212 - Built optimization pipeline 596ef0dc3213 (chunk=256, k=5, model=all-MiniLM-L6-v2)
+2026-06-05 00:30:06.357 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 00:30:06.373 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '596ef0dc3213'
+2026-06-05 00:30:06.374 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '596ef0dc3213'
+2026-06-05 00:30:06.376 | INFO     | services.vector_store_service:load_vector_store:108 - Loaded vector store for pipeline '596ef0dc3213'
+2026-06-05 00:31:03.519 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 00:35:01.830 | INFO     | services.document_service:load_documents:80 - Loaded 1 pages/sections from 'd7968e98_test_doc.txt'
+2026-06-05 00:35:01.832 | INFO     | services.rag_service:ingest_document:78 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 00:35:01.832 | INFO     | services.vector_store_service:get_embeddings:42 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 00:35:01.841 | INFO     | services.document_service:load_documents:80 - Loaded 1 pages/sections from 'cc69bcd8_test_doc.txt'
+2026-06-05 00:35:01.842 | INFO     | services.rag_service:ingest_document:78 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 00:35:01.842 | INFO     | services.vector_store_service:get_embeddings:42 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 00:35:09.831 | INFO     | services.vector_store_service:get_embeddings:48 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 00:35:10.188 | INFO     | services.vector_store_service:get_embeddings:48 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 00:35:12.546 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 3 chunks into collection 'pipeline_7124f643f6cb' using model 'all-MiniLM-L6-v2'
+2026-06-05 00:35:12.546 | INFO     | services.rag_service:ingest_document:105 - Pipeline ready: pipeline_id=7124f643f6cb, doc_id=10fde6f29126
+2026-06-05 00:35:12.579 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 3 chunks into collection 'pipeline_fb76e4e497be' using model 'all-MiniLM-L6-v2'
+2026-06-05 00:35:12.580 | INFO     | services.rag_service:ingest_document:105 - Pipeline ready: pipeline_id=fb76e4e497be, doc_id=5515d1ca6e60
+2026-06-05 00:36:15.243 | INFO     | services.document_service:load_documents:80 - Loaded 1 pages/sections from 'd7968e98_test_doc.txt'
+2026-06-05 00:36:15.243 | INFO     | agents.evaluation_agent:generate_eval_dataset:58 - Generating 3 eval questions for pipeline '7124f643f6cb'
+2026-06-05 00:36:17.483 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (699 chars)
+2026-06-05 00:36:17.483 | INFO     | agents.evaluation_agent:generate_eval_dataset:82 - Generated 3 evaluation questions.
+2026-06-05 00:36:17.483 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 00:36:17.498 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '7124f643f6cb'
+2026-06-05 00:36:17.499 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '7124f643f6cb'
+2026-06-05 00:36:17.500 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '7124f643f6cb'
+2026-06-05 00:36:19.172 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 00:39:06.886 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 90.0/100 Grade A | F:1.00 AR:0.95 CR:0.83 CP:0.78 AC:0.67
+2026-06-05 00:39:27.554 | INFO     | agents.retrieval_inspector:run_retrieval_inspector:109 - Running Retrieval Inspector for pipeline '7124f643f6cb'
+2026-06-05 00:40:05.185 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (1011 chars)
+2026-06-05 00:40:05.185 | INFO     | agents.retrieval_inspector:run_retrieval_inspector:162 - Retrieval Inspector analysis complete.
+2026-06-05 00:40:05.186 | INFO     | agents.hallucination_detector:run_hallucination_detector:196 - Running Hallucination Detector on 3 answers...
+2026-06-05 00:40:05.186 | DEBUG    | agents.hallucination_detector:run_hallucination_detector:203 - Checking answer 1/3
+2026-06-05 00:40:05.227 | INFO     | agents.hallucination_detector:_get_nli_pipeline:34 - Loading NLI model: cross-encoder/nli-deberta-v3-small
+2026-06-05 00:40:06.025 | INFO     | agents.hallucination_detector:_get_nli_pipeline:40 - NLI model loaded.
+2026-06-05 00:40:08.207 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (155 chars)
+2026-06-05 00:40:08.212 | DEBUG    | agents.hallucination_detector:run_hallucination_detector:203 - Checking answer 2/3
+2026-06-05 00:41:04.375 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (256 chars)
+2026-06-05 00:41:04.375 | DEBUG    | agents.hallucination_detector:run_hallucination_detector:203 - Checking answer 3/3
+2026-06-05 00:41:05.555 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (146 chars)
+2026-06-05 00:41:05.555 | INFO     | agents.hallucination_detector:run_hallucination_detector:225 - Hallucination detection complete. Overall risk: Low, rate: 0.000
+2026-06-05 00:41:13.811 | INFO     | services.document_service:load_documents:80 - Loaded 1 pages/sections from 'd71487cf_bad_test_doc.txt'
+2026-06-05 00:41:13.811 | INFO     | services.rag_service:ingest_document:78 - Split into 9 chunks (size=512, overlap=50)
+2026-06-05 00:41:13.819 | INFO     | services.document_service:load_documents:80 - Loaded 1 pages/sections from '5b213ef9_bad_test_doc.txt'
+2026-06-05 00:41:13.820 | INFO     | services.rag_service:ingest_document:78 - Split into 9 chunks (size=512, overlap=50)
+2026-06-05 00:41:14.578 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 9 chunks into collection 'pipeline_85b839626010' using model 'all-MiniLM-L6-v2'
+2026-06-05 00:41:14.579 | INFO     | services.rag_service:ingest_document:105 - Pipeline ready: pipeline_id=85b839626010, doc_id=e46b46ed7db9
+2026-06-05 00:41:14.644 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 9 chunks into collection 'pipeline_80a9b1ab2cb7' using model 'all-MiniLM-L6-v2'
+2026-06-05 00:41:14.645 | INFO     | services.rag_service:ingest_document:105 - Pipeline ready: pipeline_id=80a9b1ab2cb7, doc_id=85c3a6557b98
+2026-06-05 00:41:18.791 | INFO     | services.document_service:load_documents:80 - Loaded 1 pages/sections from 'd7968e98_test_doc.txt'
+2026-06-05 00:41:18.791 | INFO     | agents.evaluation_agent:generate_eval_dataset:58 - Generating 3 eval questions for pipeline '7124f643f6cb'
+2026-06-05 00:41:24.785 | INFO     | services.document_service:load_documents:80 - Loaded 1 pages/sections from 'd71487cf_bad_test_doc.txt'
+2026-06-05 00:41:24.785 | INFO     | agents.evaluation_agent:generate_eval_dataset:58 - Generating 3 eval questions for pipeline '85b839626010'
+2026-06-05 00:42:05.230 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (945 chars)
+2026-06-05 00:42:05.230 | INFO     | agents.evaluation_agent:generate_eval_dataset:82 - Generated 3 evaluation questions.
+2026-06-05 00:42:05.230 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 00:42:05.238 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '85b839626010'
+2026-06-05 00:42:05.242 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '85b839626010'
+2026-06-05 00:42:05.245 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '85b839626010'
+2026-06-05 00:42:05.854 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (656 chars)
+2026-06-05 00:42:05.854 | INFO     | agents.evaluation_agent:generate_eval_dataset:82 - Generated 3 evaluation questions.
+2026-06-05 00:42:06.037 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 8 chunks into collection 'pipeline_4ef45419eab2' using model 'all-MiniLM-L6-v2'
+2026-06-05 00:42:06.037 | INFO     | services.rag_service:build_pipeline_for_config:212 - Built optimization pipeline 4ef45419eab2 (chunk=256, k=3, model=all-MiniLM-L6-v2)
+2026-06-05 00:42:06.037 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 00:42:06.047 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '4ef45419eab2'
+2026-06-05 00:42:06.050 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '4ef45419eab2'
+2026-06-05 00:42:06.054 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '4ef45419eab2'
+2026-06-05 00:43:03.494 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 00:43:03.764 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 00:45:06.737 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 38.6/100 Grade F | F:0.33 AR:0.28 CR:0.33 CP:0.67 AC:0.64
+2026-06-05 00:45:06.738 | INFO     | services.vector_store_service:get_embeddings:42 - Loading embedding model: all-mpnet-base-v2
+2026-06-05 00:45:09.400 | INFO     | services.vector_store_service:get_embeddings:48 - Embedding model loaded: all-mpnet-base-v2
+2026-06-05 00:45:09.708 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 8 chunks into collection 'pipeline_861b9c6c7b65' using model 'all-mpnet-base-v2'
+2026-06-05 00:45:09.708 | INFO     | services.rag_service:build_pipeline_for_config:212 - Built optimization pipeline 861b9c6c7b65 (chunk=256, k=3, model=all-mpnet-base-v2)
+2026-06-05 00:45:09.709 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 00:45:09.715 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '861b9c6c7b65'
+2026-06-05 00:45:09.717 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '861b9c6c7b65'
+2026-06-05 00:45:09.717 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '861b9c6c7b65'
+2026-06-05 00:46:04.543 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 00:47:37.044 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 33.6/100 Grade F | F:0.00 AR:0.67 CR:0.33 CP:0.43 AC:0.67
+2026-06-05 00:49:08.855 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 87.2/100 Grade B | F:1.00 AR:0.62 CR:1.00 CP:0.83 AC:0.77
+2026-06-05 00:49:09.032 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 8 chunks into collection 'pipeline_a14d69c552f5' using model 'all-MiniLM-L6-v2'
+2026-06-05 00:49:09.034 | INFO     | services.rag_service:build_pipeline_for_config:212 - Built optimization pipeline a14d69c552f5 (chunk=256, k=5, model=all-MiniLM-L6-v2)
+2026-06-05 00:49:09.034 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 00:49:09.044 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'a14d69c552f5'
+2026-06-05 00:49:09.046 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'a14d69c552f5'
+2026-06-05 00:49:09.052 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'a14d69c552f5'
+2026-06-05 00:50:03.533 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 00:54:05.914 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 74.4/100 Grade C | F:0.50 AR:0.92 CR:0.83 CP:0.78 AC:0.74
+2026-06-05 00:54:06.269 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 8 chunks into collection 'pipeline_f79515a7fc6e' using model 'all-mpnet-base-v2'
+2026-06-05 00:54:06.269 | INFO     | services.rag_service:build_pipeline_for_config:212 - Built optimization pipeline f79515a7fc6e (chunk=256, k=5, model=all-mpnet-base-v2)
+2026-06-05 00:54:06.271 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 00:54:06.281 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'f79515a7fc6e'
+2026-06-05 00:54:06.283 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'f79515a7fc6e'
+2026-06-05 00:54:06.289 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'f79515a7fc6e'
+2026-06-05 00:55:04.037 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 00:59:10.428 | INFO     | services.document_service:load_documents:80 - Loaded 1 pages/sections from '954d0a82_bad_test_doc.txt'
+2026-06-05 00:59:10.429 | INFO     | services.rag_service:ingest_document:78 - Split into 9 chunks (size=512, overlap=50)
+2026-06-05 00:59:10.429 | INFO     | services.vector_store_service:get_embeddings:42 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 00:59:10.478 | INFO     | services.document_service:load_documents:80 - Loaded 1 pages/sections from '3481f21f_bad_test_doc.txt'
+2026-06-05 00:59:10.479 | INFO     | services.rag_service:ingest_document:78 - Split into 9 chunks (size=512, overlap=50)
+2026-06-05 00:59:10.480 | INFO     | services.vector_store_service:get_embeddings:42 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 00:59:18.348 | INFO     | services.vector_store_service:get_embeddings:48 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 00:59:18.456 | INFO     | services.vector_store_service:get_embeddings:48 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 00:59:21.356 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 9 chunks into collection 'pipeline_7d496d982f05' using model 'all-MiniLM-L6-v2'
+2026-06-05 00:59:21.356 | INFO     | services.rag_service:ingest_document:105 - Pipeline ready: pipeline_id=7d496d982f05, doc_id=88298e6694d5
+2026-06-05 00:59:21.390 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 9 chunks into collection 'pipeline_80fae4aca912' using model 'all-MiniLM-L6-v2'
+2026-06-05 00:59:21.392 | INFO     | services.rag_service:ingest_document:105 - Pipeline ready: pipeline_id=80fae4aca912, doc_id=60011251df2d
+2026-06-05 00:59:33.763 | INFO     | services.document_service:load_documents:80 - Loaded 1 pages/sections from '954d0a82_bad_test_doc.txt'
+2026-06-05 00:59:33.765 | INFO     | agents.evaluation_agent:generate_eval_dataset:58 - Generating 3 eval questions for pipeline '80fae4aca912'
+2026-06-05 00:59:36.931 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (933 chars)
+2026-06-05 00:59:36.931 | INFO     | agents.evaluation_agent:generate_eval_dataset:82 - Generated 3 evaluation questions.
+2026-06-05 00:59:36.935 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 00:59:36.942 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '80fae4aca912'
+2026-06-05 00:59:36.942 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '80fae4aca912'
+2026-06-05 00:59:36.947 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '80fae4aca912'
+2026-06-05 01:00:03.917 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 01:06:05.916 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 63.3/100 Grade D | F:0.33 AR:0.33 CR:1.00 CP:1.00 AC:0.58
+2026-06-05 01:06:36.667 | INFO     | agents.retrieval_inspector:run_retrieval_inspector:109 - Running Retrieval Inspector for pipeline '80fae4aca912'
+2026-06-05 01:07:06.652 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (984 chars)
+2026-06-05 01:07:06.652 | INFO     | agents.retrieval_inspector:run_retrieval_inspector:162 - Retrieval Inspector analysis complete.
+2026-06-05 01:07:06.652 | INFO     | agents.hallucination_detector:run_hallucination_detector:196 - Running Hallucination Detector on 3 answers...
+2026-06-05 01:07:06.652 | DEBUG    | agents.hallucination_detector:run_hallucination_detector:203 - Checking answer 1/3
+2026-06-05 01:07:06.694 | INFO     | agents.hallucination_detector:_get_nli_pipeline:34 - Loading NLI model: cross-encoder/nli-deberta-v3-small
+2026-06-05 01:07:07.774 | INFO     | agents.hallucination_detector:_get_nli_pipeline:40 - NLI model loaded.
+2026-06-05 01:07:09.513 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (305 chars)
+2026-06-05 01:07:09.513 | DEBUG    | agents.hallucination_detector:run_hallucination_detector:203 - Checking answer 2/3
+2026-06-05 01:08:05.187 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (246 chars)
+2026-06-05 01:08:05.187 | DEBUG    | agents.hallucination_detector:run_hallucination_detector:203 - Checking answer 3/3
+2026-06-05 01:08:07.622 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (155 chars)
+2026-06-05 01:08:07.622 | INFO     | agents.hallucination_detector:run_hallucination_detector:225 - Hallucination detection complete. Overall risk: Medium, rate: 0.190
+2026-06-05 01:09:13.907 | INFO     | services.document_service:load_documents:80 - Loaded 1 pages/sections from '954d0a82_bad_test_doc.txt'
+2026-06-05 01:09:13.908 | INFO     | agents.evaluation_agent:generate_eval_dataset:58 - Generating 3 eval questions for pipeline '80fae4aca912'
+2026-06-05 01:09:16.171 | DEBUG    | utils.llm_client:chat_sync:83 - LLM response received (591 chars)
+2026-06-05 01:09:16.171 | INFO     | agents.evaluation_agent:generate_eval_dataset:82 - Generated 3 evaluation questions.
+2026-06-05 01:09:16.755 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 18 chunks into collection 'pipeline_33e5cc3d604c' using model 'all-MiniLM-L6-v2'
+2026-06-05 01:09:16.757 | INFO     | services.rag_service:build_pipeline_for_config:212 - Built optimization pipeline 33e5cc3d604c (chunk=256, k=3, model=all-MiniLM-L6-v2)
+2026-06-05 01:09:16.757 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 01:09:16.768 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '33e5cc3d604c'
+2026-06-05 01:09:16.769 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '33e5cc3d604c'
+2026-06-05 01:09:16.776 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '33e5cc3d604c'
+2026-06-05 01:10:04.116 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 01:12:09.694 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 83.7/100 Grade B | F:1.00 AR:0.48 CR:1.00 CP:0.83 AC:0.55
+2026-06-05 01:12:09.701 | INFO     | services.vector_store_service:get_embeddings:42 - Loading embedding model: all-mpnet-base-v2
+2026-06-05 01:12:12.385 | INFO     | services.vector_store_service:get_embeddings:48 - Embedding model loaded: all-mpnet-base-v2
+2026-06-05 01:12:13.913 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 18 chunks into collection 'pipeline_682a00bbe928' using model 'all-mpnet-base-v2'
+2026-06-05 01:12:13.913 | INFO     | services.rag_service:build_pipeline_for_config:212 - Built optimization pipeline 682a00bbe928 (chunk=256, k=3, model=all-mpnet-base-v2)
+2026-06-05 01:12:13.913 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 01:12:13.922 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '682a00bbe928'
+2026-06-05 01:12:13.925 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '682a00bbe928'
+2026-06-05 01:12:13.925 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline '682a00bbe928'
+2026-06-05 01:13:03.999 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 01:15:08.219 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 88.4/100 Grade B | F:1.00 AR:0.54 CR:1.00 CP:1.00 AC:0.64
+2026-06-05 01:15:08.617 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 18 chunks into collection 'pipeline_a657089dc4ae' using model 'all-MiniLM-L6-v2'
+2026-06-05 01:15:08.619 | INFO     | services.rag_service:build_pipeline_for_config:212 - Built optimization pipeline a657089dc4ae (chunk=256, k=5, model=all-MiniLM-L6-v2)
+2026-06-05 01:15:08.619 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 01:15:08.626 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'a657089dc4ae'
+2026-06-05 01:15:08.628 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'a657089dc4ae'
+2026-06-05 01:15:08.632 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'a657089dc4ae'
+2026-06-05 01:16:03.937 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 01:20:05.389 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 83.8/100 Grade B | F:1.00 AR:0.48 CR:1.00 CP:0.83 AC:0.53
+2026-06-05 01:20:06.653 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 18 chunks into collection 'pipeline_b47528fdc5c4' using model 'all-mpnet-base-v2'
+2026-06-05 01:20:06.653 | INFO     | services.rag_service:build_pipeline_for_config:212 - Built optimization pipeline b47528fdc5c4 (chunk=256, k=5, model=all-mpnet-base-v2)
+2026-06-05 01:20:06.653 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 01:20:06.660 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'b47528fdc5c4'
+2026-06-05 01:20:06.670 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'b47528fdc5c4'
+2026-06-05 01:20:06.679 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'b47528fdc5c4'
+2026-06-05 01:21:04.674 | INFO     | services.evaluation_service:run_ragas_evaluation:129 - Running RAGAS on 3 questions (all 5 metrics in parallel)...
+2026-06-05 01:25:05.157 | INFO     | services.evaluation_service:run_ragas_evaluation:204 - RAGAS complete — Score: 88.4/100 Grade B | F:1.00 AR:0.54 CR:1.00 CP:1.00 AC:0.48
+2026-06-05 01:25:05.537 | INFO     | services.vector_store_service:build_vector_store:93 - Indexed 18 chunks into collection 'pipeline_d11f6d0d1b56' using model 'all-MiniLM-L6-v2'
+2026-06-05 01:25:05.537 | INFO     | services.rag_service:build_pipeline_for_config:212 - Built optimization pipeline d11f6d0d1b56 (chunk=256, k=3, model=all-MiniLM-L6-v2)
+2026-06-05 01:25:05.537 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:101 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 01:25:05.545 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'd11f6d0d1b56'
+2026-06-05 01:25:05.547 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'd11f6d0d1b56'
+2026-06-05 01:25:05.548 | INFO     | services.vector_store_service:load_vector_store:132 - Loaded vector store for pipeline 'd11f6d0d1b56'
+2026-06-05 10:57:40.568 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '25d54421_test_doc.txt'
+2026-06-05 10:57:40.568 | INFO     | services.rag_service:ingest_document:51 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 10:57:40.568 | INFO     | services.vector_store_service:get_embeddings:37 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 10:57:40.568 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '50124b29_test_doc.txt'
+2026-06-05 10:57:40.572 | INFO     | services.rag_service:ingest_document:51 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 10:57:40.572 | INFO     | services.vector_store_service:get_embeddings:37 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 10:57:50.843 | INFO     | services.vector_store_service:get_embeddings:43 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 10:57:50.849 | INFO     | services.vector_store_service:get_embeddings:43 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 10:57:53.713 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 3 chunks into collection 'pipeline_fdc6288be110' using model 'all-MiniLM-L6-v2'
+2026-06-05 10:57:53.714 | INFO     | services.rag_service:ingest_document:76 - Pipeline ready: pipeline_id=fdc6288be110, doc_id=c726bd15f095
+2026-06-05 10:57:53.745 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 3 chunks into collection 'pipeline_7225e471f811' using model 'all-MiniLM-L6-v2'
+2026-06-05 10:57:53.746 | INFO     | services.rag_service:ingest_document:76 - Pipeline ready: pipeline_id=7225e471f811, doc_id=7185061daffa
+2026-06-05 10:58:44.444 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '25d54421_test_doc.txt'
+2026-06-05 10:58:44.449 | INFO     | agents.evaluation_agent:generate_eval_dataset:35 - Generating 3 eval questions for pipeline 'fdc6288be110'
+2026-06-05 10:58:45.408 | ERROR    | utils.llm_client:chat_sync:85 - Nexus API call failed: Error code: 400 - {'error': {'message': 'Budget has been exceeded! Current cost: 5.004520512685524, Max budget: 5.0', 'type': 'budget_exceeded', 'param': None, 'code': '400'}}
+2026-06-05 10:58:47.750 | ERROR    | utils.llm_client:chat_sync:85 - Nexus API call failed: Error code: 400 - {'error': {'message': 'Budget has been exceeded! Current cost: 5.004520512685524, Max budget: 5.0', 'type': 'budget_exceeded', 'param': None, 'code': '400'}}
+2026-06-05 10:58:50.076 | ERROR    | utils.llm_client:chat_sync:85 - Nexus API call failed: Error code: 400 - {'error': {'message': 'Budget has been exceeded! Current cost: 5.004520512685524, Max budget: 5.0', 'type': 'budget_exceeded', 'param': None, 'code': '400'}}
+2026-06-05 11:01:31.623 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '6ded1d55_test_doc.txt'
+2026-06-05 11:01:31.624 | INFO     | services.rag_service:ingest_document:51 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 11:01:31.626 | INFO     | services.vector_store_service:get_embeddings:37 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 11:01:31.627 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from 'a8dea2e6_test_doc.txt'
+2026-06-05 11:01:31.627 | INFO     | services.rag_service:ingest_document:51 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 11:01:31.628 | INFO     | services.vector_store_service:get_embeddings:37 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 11:01:39.107 | INFO     | services.vector_store_service:get_embeddings:43 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 11:01:39.149 | INFO     | services.vector_store_service:get_embeddings:43 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 11:01:41.340 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 3 chunks into collection 'pipeline_406e55c0d7a1' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:01:41.342 | INFO     | services.rag_service:ingest_document:76 - Pipeline ready: pipeline_id=406e55c0d7a1, doc_id=4c2e66d11758
+2026-06-05 11:01:41.372 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 3 chunks into collection 'pipeline_c35786d6562e' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:01:41.373 | INFO     | services.rag_service:ingest_document:76 - Pipeline ready: pipeline_id=c35786d6562e, doc_id=6db15073ed33
+2026-06-05 11:01:46.491 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '6ded1d55_test_doc.txt'
+2026-06-05 11:01:46.491 | INFO     | agents.evaluation_agent:generate_eval_dataset:35 - Generating 3 eval questions for pipeline 'c35786d6562e'
+2026-06-05 11:01:47.238 | ERROR    | utils.llm_client:chat_sync:85 - Nexus API call failed: Error code: 400 - {'error': {'message': 'Budget has been exceeded! Current cost: 5.004520512685524, Max budget: 5.0', 'type': 'budget_exceeded', 'param': None, 'code': '400'}}
+2026-06-05 11:01:49.815 | ERROR    | utils.llm_client:chat_sync:85 - Nexus API call failed: Error code: 400 - {'error': {'message': 'Budget has been exceeded! Current cost: 5.004520512685524, Max budget: 5.0', 'type': 'budget_exceeded', 'param': None, 'code': '400'}}
+2026-06-05 11:01:52.151 | ERROR    | utils.llm_client:chat_sync:85 - Nexus API call failed: Error code: 400 - {'error': {'message': 'Budget has been exceeded! Current cost: 5.004520512685524, Max budget: 5.0', 'type': 'budget_exceeded', 'param': None, 'code': '400'}}
+2026-06-05 11:06:39.690 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '1797190d_test_doc.txt'
+2026-06-05 11:06:39.690 | INFO     | services.rag_service:ingest_document:51 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 11:06:39.690 | INFO     | services.vector_store_service:get_embeddings:37 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 11:06:39.690 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '3bbd11b7_test_doc.txt'
+2026-06-05 11:06:39.696 | INFO     | services.rag_service:ingest_document:51 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 11:06:39.696 | INFO     | services.vector_store_service:get_embeddings:37 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 11:06:47.022 | INFO     | services.vector_store_service:get_embeddings:43 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 11:06:47.218 | INFO     | services.vector_store_service:get_embeddings:43 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 11:06:49.231 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 3 chunks into collection 'pipeline_9ae72f4c43e2' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:06:49.231 | INFO     | services.rag_service:ingest_document:76 - Pipeline ready: pipeline_id=9ae72f4c43e2, doc_id=0100c6a299c0
+2026-06-05 11:06:49.261 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 3 chunks into collection 'pipeline_7129fd88f071' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:06:49.262 | INFO     | services.rag_service:ingest_document:76 - Pipeline ready: pipeline_id=7129fd88f071, doc_id=45cf52cc9f5b
+2026-06-05 11:07:00.163 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '1797190d_test_doc.txt'
+2026-06-05 11:07:00.165 | INFO     | agents.evaluation_agent:generate_eval_dataset:35 - Generating 3 eval questions for pipeline '7129fd88f071'
+2026-06-05 11:07:05.344 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (745 chars)
+2026-06-05 11:07:05.344 | INFO     | agents.evaluation_agent:generate_eval_dataset:50 - Generated 3 questions.
+2026-06-05 11:07:05.350 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:71 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 11:07:05.359 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '7129fd88f071'
+2026-06-05 11:07:05.359 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '7129fd88f071'
+2026-06-05 11:07:05.368 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '7129fd88f071'
+2026-06-05 11:07:07.044 | INFO     | services.evaluation_service:run_ragas_evaluation:90 - Running RAGAS on 3 questions...
+2026-06-05 11:10:06.558 | INFO     | services.evaluation_service:run_ragas_evaluation:152 - RAGAS done — Score: 88.2/100 Grade B | F:0.83 AR:0.90 CR:1.00 CP:0.78 AC:0.79
+2026-06-05 11:10:44.769 | INFO     | agents.retrieval_inspector:run_retrieval_inspector:84 - Running Retrieval Inspector for pipeline '7129fd88f071'
+2026-06-05 11:11:04.064 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (1041 chars)
+2026-06-05 11:11:04.064 | INFO     | agents.retrieval_inspector:run_retrieval_inspector:134 - Retrieval Inspector analysis complete.
+2026-06-05 11:11:04.074 | INFO     | agents.hallucination_detector:run_hallucination_detector:86 - Hallucination Detector: checking 3 answers in parallel ...
+2026-06-05 11:11:04.931 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (140 chars)
+2026-06-05 11:11:05.588 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (293 chars)
+2026-06-05 11:12:03.125 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (246 chars)
+2026-06-05 11:12:03.125 | INFO     | agents.hallucination_detector:run_hallucination_detector:123 - Hallucination complete — risk: Medium, rate: 0.333
+2026-06-05 11:12:19.557 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '1797190d_test_doc.txt'
+2026-06-05 11:12:19.560 | INFO     | agents.evaluation_agent:generate_eval_dataset:35 - Generating 3 eval questions for pipeline '7129fd88f071'
+2026-06-05 11:12:21.466 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (668 chars)
+2026-06-05 11:12:21.467 | INFO     | agents.evaluation_agent:generate_eval_dataset:50 - Generated 3 questions.
+2026-06-05 11:12:21.476 | INFO     | services.vector_store_service:get_embeddings:37 - Loading embedding model: all-mpnet-base-v2
+2026-06-05 11:12:21.839 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 8 chunks into collection 'pipeline_2df5d06c1825' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:12:21.840 | INFO     | services.rag_service:build_pipeline_for_config:136 - Built pipeline 2df5d06c1825 (chunk=256, k=3, model=all-MiniLM-L6-v2)
+2026-06-05 11:12:21.840 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:71 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 11:12:21.856 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '2df5d06c1825'
+2026-06-05 11:12:21.858 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '2df5d06c1825'
+2026-06-05 11:12:21.865 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '2df5d06c1825'
+2026-06-05 11:12:21.919 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 8 chunks into collection 'pipeline_05eae77ad765' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:12:21.922 | INFO     | services.rag_service:build_pipeline_for_config:136 - Built pipeline 05eae77ad765 (chunk=256, k=5, model=all-MiniLM-L6-v2)
+2026-06-05 11:12:21.925 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:71 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 11:12:21.940 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '05eae77ad765'
+2026-06-05 11:12:21.947 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '05eae77ad765'
+2026-06-05 11:12:21.951 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '05eae77ad765'
+2026-06-05 11:12:24.500 | INFO     | services.vector_store_service:get_embeddings:43 - Embedding model loaded: all-mpnet-base-v2
+2026-06-05 11:12:24.931 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 8 chunks into collection 'pipeline_77c794a47078' using model 'all-mpnet-base-v2'
+2026-06-05 11:12:24.932 | INFO     | services.rag_service:build_pipeline_for_config:136 - Built pipeline 77c794a47078 (chunk=256, k=3, model=all-mpnet-base-v2)
+2026-06-05 11:12:24.932 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:71 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 11:12:24.939 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '77c794a47078'
+2026-06-05 11:12:24.943 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '77c794a47078'
+2026-06-05 11:12:24.947 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '77c794a47078'
+2026-06-05 11:13:02.746 | INFO     | services.evaluation_service:run_ragas_evaluation:90 - Running RAGAS on 3 questions...
+2026-06-05 11:16:04.202 | INFO     | services.evaluation_service:run_ragas_evaluation:152 - RAGAS done — Score: 95.7/100 Grade A | F:1.00 AR:0.96 CR:1.00 CP:0.83 AC:0.79
+2026-06-05 11:16:04.205 | INFO     | services.evaluation_service:run_ragas_evaluation:90 - Running RAGAS on 3 questions...
+2026-06-05 11:21:04.419 | INFO     | services.evaluation_service:run_ragas_evaluation:152 - RAGAS done — Score: 94.7/100 Grade A | F:1.00 AR:0.97 CR:1.00 CP:0.78 AC:0.78
+2026-06-05 11:21:04.421 | INFO     | services.evaluation_service:run_ragas_evaluation:90 - Running RAGAS on 3 questions...
+2026-06-05 11:24:05.963 | INFO     | services.evaluation_service:run_ragas_evaluation:152 - RAGAS done — Score: 94.9/100 Grade A | F:1.00 AR:0.97 CR:1.00 CP:0.78 AC:0.87
+2026-06-05 11:24:06.954 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 8 chunks into collection 'pipeline_057dd1ac7ca8' using model 'all-mpnet-base-v2'
+2026-06-05 11:24:06.954 | INFO     | services.rag_service:build_pipeline_for_config:136 - Built pipeline 057dd1ac7ca8 (chunk=256, k=5, model=all-mpnet-base-v2)
+2026-06-05 11:24:06.955 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:71 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 11:24:07.003 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '057dd1ac7ca8'
+2026-06-05 11:24:07.011 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '057dd1ac7ca8'
+2026-06-05 11:24:07.023 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 8 chunks into collection 'pipeline_b5c983a710a6' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:24:07.023 | INFO     | services.rag_service:build_pipeline_for_config:136 - Built pipeline b5c983a710a6 (chunk=256, k=3, model=all-MiniLM-L6-v2)
+2026-06-05 11:24:07.026 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:71 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 11:24:07.059 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'b5c983a710a6'
+2026-06-05 11:24:07.065 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'b5c983a710a6'
+2026-06-05 11:24:07.071 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'b5c983a710a6'
+2026-06-05 11:24:07.085 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '057dd1ac7ca8'
+2026-06-05 11:24:07.128 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 8 chunks into collection 'pipeline_f954c2358eb9' using model 'all-mpnet-base-v2'
+2026-06-05 11:24:07.134 | INFO     | services.rag_service:build_pipeline_for_config:136 - Built pipeline f954c2358eb9 (chunk=256, k=3, model=all-mpnet-base-v2)
+2026-06-05 11:24:07.135 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:71 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 11:24:07.169 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'f954c2358eb9'
+2026-06-05 11:24:07.180 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'f954c2358eb9'
+2026-06-05 11:24:07.180 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'f954c2358eb9'
+2026-06-05 11:24:34.429 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '205e90a4_test_doc.txt'
+2026-06-05 11:24:34.430 | INFO     | services.rag_service:ingest_document:51 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 11:24:34.433 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '3143f712_test_doc.txt'
+2026-06-05 11:24:34.433 | INFO     | services.rag_service:ingest_document:51 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 11:24:34.758 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 3 chunks into collection 'pipeline_c6656814876e' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:24:34.759 | INFO     | services.rag_service:ingest_document:76 - Pipeline ready: pipeline_id=c6656814876e, doc_id=de18b63c76f8
+2026-06-05 11:24:34.800 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 3 chunks into collection 'pipeline_7affe0f6a1bb' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:24:34.800 | INFO     | services.rag_service:ingest_document:76 - Pipeline ready: pipeline_id=7affe0f6a1bb, doc_id=064c6cdfb5d8
+2026-06-05 11:24:50.203 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from 'a944d076_bad_test_doc.txt'
+2026-06-05 11:24:50.204 | INFO     | services.rag_service:ingest_document:51 - Split into 9 chunks (size=512, overlap=50)
+2026-06-05 11:24:50.207 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '424f6014_bad_test_doc.txt'
+2026-06-05 11:24:50.208 | INFO     | services.rag_service:ingest_document:51 - Split into 9 chunks (size=512, overlap=50)
+2026-06-05 11:24:51.231 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 9 chunks into collection 'pipeline_4c3bdc71e434' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:24:51.231 | INFO     | services.rag_service:ingest_document:76 - Pipeline ready: pipeline_id=4c3bdc71e434, doc_id=4c36fab5e1e8
+2026-06-05 11:24:51.282 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 9 chunks into collection 'pipeline_c2a76a00c51c' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:24:51.284 | INFO     | services.rag_service:ingest_document:76 - Pipeline ready: pipeline_id=c2a76a00c51c, doc_id=76ffff81202b
+2026-06-05 11:24:55.571 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from 'a944d076_bad_test_doc.txt'
+2026-06-05 11:24:55.572 | INFO     | agents.evaluation_agent:generate_eval_dataset:35 - Generating 3 eval questions for pipeline '4c3bdc71e434'
+2026-06-05 11:25:01.819 | INFO     | services.evaluation_service:run_ragas_evaluation:90 - Running RAGAS on 3 questions...
+2026-06-05 11:25:03.625 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (980 chars)
+2026-06-05 11:25:03.626 | INFO     | agents.evaluation_agent:generate_eval_dataset:50 - Generated 3 questions.
+2026-06-05 11:25:03.628 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:71 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 11:25:03.637 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '4c3bdc71e434'
+2026-06-05 11:25:03.641 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '4c3bdc71e434'
+2026-06-05 11:25:03.646 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '4c3bdc71e434'
+2026-06-05 11:26:03.039 | INFO     | services.evaluation_service:run_ragas_evaluation:90 - Running RAGAS on 3 questions...
+2026-06-05 11:29:01.473 | INFO     | services.evaluation_service:run_ragas_evaluation:152 - RAGAS done — Score: 55.6/100 Grade F | F:0.32 AR:0.67 CR:0.64 CP:0.67 AC:0.67
+2026-06-05 11:29:01.475 | INFO     | services.evaluation_service:run_ragas_evaluation:90 - Running RAGAS on 3 questions...
+2026-06-05 11:31:04.235 | INFO     | services.evaluation_service:run_ragas_evaluation:152 - RAGAS done — Score: 50.8/100 Grade F | F:0.61 AR:0.19 CR:0.63 CP:0.59 AC:1.00
+2026-06-05 11:33:04.118 | INFO     | services.evaluation_service:run_ragas_evaluation:152 - RAGAS done — Score: 84.7/100 Grade B | F:0.67 AR:0.99 CR:0.97 CP:0.78 AC:0.91
+2026-06-05 11:33:04.121 | INFO     | services.evaluation_service:run_ragas_evaluation:90 - Running RAGAS on 3 questions...
+2026-06-05 11:37:06.067 | INFO     | services.evaluation_service:run_ragas_evaluation:152 - RAGAS done — Score: 95.3/100 Grade A | F:1.00 AR:0.95 CR:1.00 CP:0.83 AC:0.82
+2026-06-05 11:55:35.772 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '12a46141_test_doc.txt'
+2026-06-05 11:55:35.773 | INFO     | services.rag_service:ingest_document:51 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 11:55:35.775 | INFO     | services.vector_store_service:get_embeddings:37 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 11:55:35.776 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '8107a0bc_test_doc.txt'
+2026-06-05 11:55:35.777 | INFO     | services.rag_service:ingest_document:51 - Split into 3 chunks (size=512, overlap=50)
+2026-06-05 11:55:35.777 | INFO     | services.vector_store_service:get_embeddings:37 - Loading embedding model: all-MiniLM-L6-v2
+2026-06-05 11:55:45.530 | INFO     | services.vector_store_service:get_embeddings:43 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 11:55:45.626 | INFO     | services.vector_store_service:get_embeddings:43 - Embedding model loaded: all-MiniLM-L6-v2
+2026-06-05 11:55:48.386 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 3 chunks into collection 'pipeline_bd2899ff345c' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:55:48.387 | INFO     | services.rag_service:ingest_document:76 - Pipeline ready: pipeline_id=bd2899ff345c, doc_id=6da3af28fd21
+2026-06-05 11:55:48.422 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 3 chunks into collection 'pipeline_ceb85e6b18ef' using model 'all-MiniLM-L6-v2'
+2026-06-05 11:55:48.423 | INFO     | services.rag_service:ingest_document:76 - Pipeline ready: pipeline_id=ceb85e6b18ef, doc_id=8f6699a67f6e
+2026-06-05 11:56:17.440 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '12a46141_test_doc.txt'
+2026-06-05 11:56:17.441 | INFO     | agents.evaluation_agent:generate_eval_dataset:35 - Generating 3 eval questions for pipeline 'bd2899ff345c'
+2026-06-05 11:56:19.886 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (751 chars)
+2026-06-05 11:56:19.886 | INFO     | agents.evaluation_agent:generate_eval_dataset:50 - Generated 3 questions.
+2026-06-05 11:56:19.887 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:71 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 11:56:19.894 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'bd2899ff345c'
+2026-06-05 11:56:19.910 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'bd2899ff345c'
+2026-06-05 11:56:19.911 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'bd2899ff345c'
+2026-06-05 11:56:21.631 | INFO     | services.evaluation_service:run_ragas_evaluation:90 - Running RAGAS on 3 questions...
+2026-06-05 12:00:05.263 | INFO     | services.evaluation_service:run_ragas_evaluation:152 - RAGAS done — Score: 69.8/100 Grade D | F:0.17 AR:0.97 CR:1.00 CP:0.78 AC:0.65
+2026-06-05 12:01:43.483 | INFO     | agents.retrieval_inspector:run_retrieval_inspector:84 - Running Retrieval Inspector for pipeline 'bd2899ff345c'
+2026-06-05 12:01:46.214 | INFO     | services.document_service:load_documents:61 - Loaded 1 pages/sections from '12a46141_test_doc.txt'
+2026-06-05 12:01:46.217 | INFO     | agents.evaluation_agent:generate_eval_dataset:35 - Generating 3 eval questions for pipeline 'bd2899ff345c'
+2026-06-05 12:02:03.962 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (654 chars)
+2026-06-05 12:02:03.962 | INFO     | agents.evaluation_agent:generate_eval_dataset:50 - Generated 3 questions.
+2026-06-05 12:02:03.966 | INFO     | services.vector_store_service:get_embeddings:37 - Loading embedding model: all-mpnet-base-v2
+2026-06-05 12:02:04.209 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (1178 chars)
+2026-06-05 12:02:04.209 | INFO     | agents.retrieval_inspector:run_retrieval_inspector:134 - Retrieval Inspector analysis complete.
+2026-06-05 12:02:04.211 | INFO     | agents.hallucination_detector:run_hallucination_detector:86 - Hallucination Detector: checking 3 answers in parallel ...
+2026-06-05 12:02:04.350 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 8 chunks into collection 'pipeline_fc59ad24479a' using model 'all-MiniLM-L6-v2'
+2026-06-05 12:02:04.351 | INFO     | services.rag_service:build_pipeline_for_config:136 - Built pipeline fc59ad24479a (chunk=256, k=3, model=all-MiniLM-L6-v2)
+2026-06-05 12:02:04.352 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:71 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 12:02:04.369 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'fc59ad24479a'
+2026-06-05 12:02:04.369 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'fc59ad24479a'
+2026-06-05 12:02:04.376 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'fc59ad24479a'
+2026-06-05 12:02:04.423 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 8 chunks into collection 'pipeline_49aa3a3dcbb3' using model 'all-MiniLM-L6-v2'
+2026-06-05 12:02:04.429 | INFO     | services.rag_service:build_pipeline_for_config:136 - Built pipeline 49aa3a3dcbb3 (chunk=256, k=5, model=all-MiniLM-L6-v2)
+2026-06-05 12:02:04.430 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:71 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 12:02:04.454 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '49aa3a3dcbb3'
+2026-06-05 12:02:04.454 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '49aa3a3dcbb3'
+2026-06-05 12:02:04.457 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline '49aa3a3dcbb3'
+2026-06-05 12:02:06.851 | INFO     | services.vector_store_service:get_embeddings:43 - Embedding model loaded: all-mpnet-base-v2
+2026-06-05 12:02:07.263 | INFO     | services.vector_store_service:build_vector_store:77 - Indexed 8 chunks into collection 'pipeline_dcdc3a666366' using model 'all-mpnet-base-v2'
+2026-06-05 12:02:07.264 | INFO     | services.rag_service:build_pipeline_for_config:136 - Built pipeline dcdc3a666366 (chunk=256, k=3, model=all-mpnet-base-v2)
+2026-06-05 12:02:07.264 | INFO     | services.evaluation_service:collect_rag_outputs_parallel:71 - Collecting 3 answers in parallel (workers=3)...
+2026-06-05 12:02:07.272 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'dcdc3a666366'
+2026-06-05 12:02:07.276 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'dcdc3a666366'
+2026-06-05 12:02:07.277 | INFO     | services.vector_store_service:load_vector_store:106 - Loaded vector store for pipeline 'dcdc3a666366'
+2026-06-05 12:03:01.980 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (298 chars)
+2026-06-05 12:03:02.051 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (295 chars)
+2026-06-05 12:03:02.258 | INFO     | services.evaluation_service:run_ragas_evaluation:90 - Running RAGAS on 3 questions...
+2026-06-05 12:04:02.414 | DEBUG    | utils.llm_client:chat_sync:82 - LLM response received (246 chars)
+2026-06-05 12:04:02.415 | INFO     | agents.hallucination_detector:run_hallucination_detector:123 - Hallucination complete — risk: High, rate: 0.667

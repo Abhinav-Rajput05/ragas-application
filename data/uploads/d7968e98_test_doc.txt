@@ -1,0 +1,32 @@
+NovaTech Solutions - Company Overview
+
+NovaTech Solutions is a cloud software company founded in 2018, headquartered in Austin, Texas.
+The company specializes in AI-powered analytics tools for small and medium businesses.
+
+Products:
+- NovaDash: A real-time business intelligence dashboard that connects to over 50 data sources.
+- NovaBot: An AI chatbot for customer support that reduces ticket resolution time by 40%.
+- NovaShield: A cybersecurity monitoring tool that detects threats using machine learning.
+
+Pricing:
+- NovaDash starts at $99/month for up to 5 users.
+- NovaBot is priced at $199/month with unlimited conversations.
+- NovaShield costs $149/month per 100 endpoints monitored.
+
+Team:
+- CEO: Sarah Chen, former VP of Engineering at Salesforce.
+- CTO: Marcus Rivera, PhD in Machine Learning from MIT.
+- The company has 120 full-time employees across engineering, sales, and support.
+
+Financials:
+- NovaTech raised $25 million in Series B funding in 2023.
+- Annual recurring revenue reached $8 million in 2024.
+- The company serves over 1,200 customers across 30 countries.
+
+Customer Support:
+- Support is available 24/7 via live chat and email.
+- Average response time is under 2 hours for all paid plans.
+- Enterprise customers get a dedicated account manager.
+
+NovaTech's mission is to make enterprise-grade analytics accessible to every business,
+regardless of size or technical expertise.
